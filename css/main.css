@@ -1,0 +1,72 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   html,body{
+   	height: 100%;
+   }
+   ul{
+   	margin-bottom: 0px;
+   }
+   a:focus,a:hover{
+   	text-decoration: none;
+   }
+   .header.navbar{
+   	min-height: 75px;
+   	background: #012550; 
+   }
+   .header .container-fluid{
+   	display: table;
+   	height: 75px;
+   }
+   .header #navbar {
+   	display: table-cell!important;
+    vertical-align: middle;
+    width: 89%;
+   }
+   .header .navbar-form{margin: 0px;}
+   .header .header_menus_left ul li a{
+   	color: #fff;
+   	padding: 5px 5px;
+          line-height: 35px;
+   	border: 1px solid transparent;
+   }
+.header .header_menus_left ul li a:hover{
+	border-radius: 20px; 
+	border: 1px solid #fff;
+}
+.header .notify_part li a{
+      color: #fff;
+      line-height: 35px;
+          padding: 0px 6px;
+}
+.header .notify_part li a i{
+padding: 0px 5px 0px 0px;
+   font-size: 24px;
+   float: left;
+}
+.header .notify_part li a span{
+      background-color: #3bc3ff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: table;
+    text-align: center;
+    line-height: 30px;
+    margin: 3px 0px;
+    float: left;
+}
+.header .notify_part li a span img{
+   border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
