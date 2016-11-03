@@ -24,6 +24,7 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+    <!-- BEGIN HEADER -->
     <nav class="navbar navbar-inverse navbar-fixed-top header" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -47,9 +48,11 @@
                 </form>
                 <form class="navbar-form" role="form">
                     <ul class="list-inline pull-right notify_part">
-                        <li><a href="javascript:void(0)">
-                        <span class="pull-right"><img class="img-responsive" src="http://placehold.it/50x50" alt="user_profile"></span>MICHEL </a></li>
-                          <li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span class="pull-right"><img class="img-responsive" src="http://placehold.it/50x50" alt="user_profile"></span>MICHEL </a>
+                        </li>
+                        <li>
                             <a href="javascript:void(0)">
                                 <i class="ion-android-menu"></i></a>
                         </li>
@@ -70,14 +73,129 @@
                         </li>
                     </ul>
                 </form>
-                
             </div>
             <!--/.navbar-collapse -->
         </div>
     </nav>
+    <!-- END HEADER -->
+    <!--BEGIN MY FEED  -->
+    <div class="container-fluid myfeed">
+        <div class="col-xs-12 text-center ">
+            <p>MY FEED</p>
+            <span><i class="ion-ios-heart-outline"></i></span>
+        </div>
+    </div>
+    <!-- END MY FEED -->
+    <!-- DASHBOARD SECTION -->
+    <section>
+        <div class="container-fluid dashboard">
+            <div class="row">
+                <div class="col-xs-12 col-condensed dashboard_section_one">
+                    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 dashboard_profile_left">
+                        <div class="col-xs-12 text-center dashboard_user_profile">
+                            <h1>Hi Michael</h1>
+                            <figure>
+                                <img src="img/nouser.png" alt="profile_image">
+                                <figcaption>
+                                    <span></span>
+                                </figcaption>
+                            </figure>
+                            <h4>Profile Strength</h4>
+                            <span>89<sup>%</sup></span>
+                            <a href="javascript:void(0)" class="btn btn-default follow_btn">Edit Profile</a>
+                            <ul class="list-inline">
+                                <li>
+                                    <div class="col-xs-12 col-condensed">
+                                        <span>108</span>
+                                        <p>Followers</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="col-xs-12 col-condensed">
+                                        <span>12</span>
+                                        <p>Photos</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="col-xs-12 col-condensed">
+                                        <span>08</span>
+                                        <p>Videos</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12   dashboard_profile_right">
+                        <div class="col-xs-12 dashboard_user_post ">
+                            <textarea class="js-auto-size" rows="1" placeholder="Share your Journey...."></textarea>
+                            <div class="col-xs-12 col-condensed pull-right">
+                                <a href="javascript:void(0)" class="btn btn-default follow_btn pull-right">Post</a>
+                            </div>
+                            <ul class="list-inline">
+                                <li>
+                                    <div class="fileUpload btn btn-link">
+                                        <span>PHOTO <img src="img/upload_photo_icon.png" alt="photo_upload_icon"></span>
+                                        <input type="file" class="upload" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fileUpload btn btn-link">
+                                        <span>VIDEO  <img src="img/upload_video_icon.png" alt="video_upload_icon"></span>
+                                        <input type="file" class="upload" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fileUpload btn btn-link">
+                                        <span>TAGS <img src="img/upload_tags_icon.png" alt="tags_upload_icon"> </span>
+                                        <input type="btn" class="upload" />
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 new_suggested_followers text-center">
+                            <ul class="list-inline">
+                                <li>
+                                    <div class="col-xs-12">
+                                    <img src="img/followers.png" alt="followers_img">
+                                    <h4>Jamie Reyneke-Barnard</h4>
+                                    <h5>Waikato Region</h5>
+                                    <p>Hi! I'm Jamie, a 17 year old student at Hillcrest High School in Hamilton. I work... </p>
+                                     <a href="javascript:void(0)" class="btn btn-default follow_btn ">Follow</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="col-xs-12">
+                                   <img src="img/followers1.png" alt="followers_img">
+                                    <h4>Jamie Reyneke-Barnard</h4>
+                                    <h5>Waikato Region</h5>
+                                    <p>Hi! I'm Jamie, a 17 year old student at Hillcrest High School in Hamilton. I work... </p>
+                                     <a href="javascript:void(0)" class="btn btn-default follow_btn ">Follow</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="col-xs-12">
+                                   <img src="img/followers2.png" alt="followers_img">
+                                    <h4>Jamie Reyneke-Barnard</h4>
+                                    <h5>Waikato Region</h5>
+                                    <p>Hi! I'm Jamie, a 17 year old student at Hillcrest High School in Hamilton. I work... </p>
+                                     <a href="javascript:void(0)" class="btn btn-default follow_btn ">Follow</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END DASHBOARD SECTION -->
     <script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery.textarea_autosize.js"></script>
     <script src="js/main.js"></script>
+    <script>
+    $('textarea.js-auto-size').textareaAutoSize();
+    </script>
 </body>
 
 </html>
