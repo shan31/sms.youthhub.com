@@ -16,6 +16,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="css/reset.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/images-grid.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
@@ -156,35 +157,539 @@
                             <ul class="list-inline">
                                 <li>
                                     <div class="col-xs-12">
-                                    <img src="img/followers.png" alt="followers_img">
-                                    <h4>Jamie Reyneke-Barnard</h4>
-                                    <h5>Waikato Region</h5>
-                                    <p>Hi! I'm Jamie, a 17 year old student at Hillcrest High School in Hamilton. I work... </p>
-                                     <a href="javascript:void(0)" class="btn btn-default follow_btn ">Follow</a>
+                                        <img src="img/followers.png" alt="followers_img">
+                                        <h4>Jamie Reyneke-Barnard</h4>
+                                        <h5>Waikato Region</h5>
+                                        <p>Hi! I'm Jamie, a 17 year old student at Hillcrest High School in Hamilton. I work... </p>
+                                        <a href="javascript:void(0)" class="btn btn-default follow_btn ">Follow</a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="col-xs-12">
-                                   <img src="img/followers1.png" alt="followers_img">
-                                    <h4>Jamie Reyneke-Barnard</h4>
-                                    <h5>Waikato Region</h5>
-                                    <p>Hi! I'm Jamie, a 17 year old student at Hillcrest High School in Hamilton. I work... </p>
-                                     <a href="javascript:void(0)" class="btn btn-default follow_btn ">Follow</a>
+                                        <img src="img/followers1.png" alt="followers_img">
+                                        <h4>Jamie Reyneke-Barnard</h4>
+                                        <h5>Waikato Region</h5>
+                                        <p>Hi! I'm Jamie, a 17 year old student at Hillcrest High School in Hamilton. I work... </p>
+                                        <a href="javascript:void(0)" class="btn btn-default follow_btn ">Follow</a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="col-xs-12">
-                                   <img src="img/followers2.png" alt="followers_img">
-                                    <h4>Jamie Reyneke-Barnard</h4>
-                                    <h5>Waikato Region</h5>
-                                    <p>Hi! I'm Jamie, a 17 year old student at Hillcrest High School in Hamilton. I work... </p>
-                                     <a href="javascript:void(0)" class="btn btn-default follow_btn ">Follow</a>
+                                        <img src="img/followers2.png" alt="followers_img">
+                                        <h4>Jamie Reyneke-Barnard</h4>
+                                        <h5>Waikato Region</h5>
+                                        <p>Hi! I'm Jamie, a 17 year old student at Hillcrest High School in Hamilton. I work... </p>
+                                        <a href="javascript:void(0)" class="btn btn-default follow_btn ">Follow</a>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-xs-12 feed_search_grid">
-                        	
+                            <div class="group pull-left">
+                                <input type="search" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label><i class="ion-search"></i> Search Feed</label>
+                            </div>
+                            <div class="grid_type">
+                                <ul class="list-inline pull-right ">
+                                    <li>
+                                        <a href="javascript:void(0)">Detailed <i class="ion-ios-list-outline"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Grid <i class="ion-android-apps"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Favourite <i class="ion-ios-star"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 post_section col-condensed">
+                            <div class="col-xs-12 col-condensed">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <div class="col-xs-12 col-condensed post_content">
+                                            <div class="col-xs-12 col-condensed">
+                                                <div class="col-xs-1 col-condensed user_image">
+                                                    <img src="img/user_post_profile.png" class="img-responsive">
+                                                </div>
+                                                <div class="col-xs-11">
+                                                    <h4>Weltec</h4>
+                                                    <p class="date_time">09 Oct 2016 09:06 PM</p>
+                                                    <p>People often ask, 'Do you really need a degree to succeed in retail?' The truth is it's an amazingly complex industry with lots of potential career paths, as Massey student Marc Blackburn will attest. Through his studies he is gaining invaluable insights for his role as logistics support manager at The Warehouse. #retailca#MasseyUni</p>
+                                                    <div id="gallery2"></div>
+                                                    <ul class="list-inline like_contribute">
+                                                        <li>
+                                                            <a href="javascript:void(0)"><span><i class="ion-thumbsup"></i></span>Encourage</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)"><span><i class="ion-briefcase"></i></span>Contribute</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="col-xs-12 col-condensed">
+                                                        <ul class="list-unstyled comment_section">
+                                                            <li>
+                                                                <div class="col-xs-12 col-condensed">
+                                                                    <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                        <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                                    </div>
+                                                                    <div class="col-xs-11 comment_area">
+                                                                        <div class="input-group">
+                                                                            <input class="form-control" placeholder="Write a comment" type="text">
+                                                                            <span class="input-group-addon">
+					                        <a href="javascript:void(0)"><i class="ion-android-done"></i></a>  
+					                    </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-condensed comment_list">
+                                            <div class="col-xs-1 col-condensed user_image">
+                                            </div>
+                                            <div class="col-xs-11   ">
+                                                <ul class="list-unstyled comment_section">
+                                                    <li>
+                                                        <div class="col-xs-12 ">
+                                                            <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                            </div>
+                                                            <div class="col-xs-11 comment_text">
+                                                                <div class="col-xs-12 col-condensed">
+                                                            	  <h5>Jamie Reyneke-Barnard</h5>
+                                                                <p>This is awesome. Want to try it.</p>
+                                                                <span>09 Oct 2016 09:06 PM</span>
+                                                            	</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                     <li>
+                                                        <div class="col-xs-12 ">
+                                                            <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                            </div>
+                                                            <div class="col-xs-11 comment_text">
+                                                            	<div class="col-xs-12 col-condensed">
+                                                            	  <h5>Jamie Reyneke-Barnard</h5>
+                                                                <p>This is awesome. Want to try it.</p>
+                                                                <span>09 Oct 2016 09:06 PM</span>
+                                                            	</div>
+                                                               
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                      <li>
+                                        <div class="col-xs-12 col-condensed post_content">
+                                            <div class="col-xs-12 col-condensed">
+                                                <div class="col-xs-1 col-condensed user_image">
+                                                    <img src="img/user_post_profile.png" class="img-responsive">
+                                                </div>
+                                                <div class="col-xs-11">
+                                                    <h4>Weltec</h4>
+                                                    <p class="date_time">09 Oct 2016 09:06 PM</p>
+                                                    <p>People often ask, 'Do you really need a degree to succeed in retail?' The truth is it's an amazingly complex industry with lots of potential career paths, as Massey student Marc Blackburn will attest. Through his studies he is gaining invaluable insights for his role as logistics support manager at The Warehouse. #retailca#MasseyUni</p>
+                                                    <div id="gallery3"></div>
+                                                    <ul class="list-inline like_contribute">
+                                                        <li>
+                                                            <a href="javascript:void(0)"><span><i class="ion-thumbsup"></i></span>Encourage</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)"><span><i class="ion-briefcase"></i></span>Contribute</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="col-xs-12 col-condensed">
+                                                        <ul class="list-unstyled comment_section">
+                                                            <li>
+                                                                <div class="col-xs-12 col-condensed">
+                                                                    <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                        <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                                    </div>
+                                                                    <div class="col-xs-11 comment_area">
+                                                                        <div class="input-group">
+                                                                            <input class="form-control" placeholder="Write a comment" type="text">
+                                                                            <span class="input-group-addon">
+					                        <a href="javascript:void(0)"><i class="ion-android-done"></i></a>  
+					                    </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-condensed comment_list">
+                                            <div class="col-xs-1 col-condensed user_image">
+                                            </div>
+                                            <div class="col-xs-11   ">
+                                                <ul class="list-unstyled comment_section">
+                                                    <li>
+                                                        <div class="col-xs-12 ">
+                                                            <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                            </div>
+                                                            <div class="col-xs-11 comment_text">
+                                                                <div class="col-xs-12 col-condensed">
+                                                            	  <h5>Jamie Reyneke-Barnard</h5>
+                                                                <p>This is awesome. Want to try it.</p>
+                                                                <span>09 Oct 2016 09:06 PM</span>
+                                                            	</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                     <li>
+                                                        <div class="col-xs-12 ">
+                                                            <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                            </div>
+                                                            <div class="col-xs-11 comment_text">
+                                                            	<div class="col-xs-12 col-condensed">
+                                                            	  <h5>Jamie Reyneke-Barnard</h5>
+                                                                <p>This is awesome. Want to try it.</p>
+                                                                <span>09 Oct 2016 09:06 PM</span>
+                                                            	</div>
+                                                               
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                      <li>
+                                        <div class="col-xs-12 col-condensed post_content">
+                                            <div class="col-xs-12 col-condensed">
+                                                <div class="col-xs-1 col-condensed user_image">
+                                                    <img src="img/user_post_profile.png" class="img-responsive">
+                                                </div>
+                                                <div class="col-xs-11">
+                                                    <h4>Weltec</h4>
+                                                    <p class="date_time">09 Oct 2016 09:06 PM</p>
+                                                    <p>People often ask, 'Do you really need a degree to succeed in retail?' The truth is it's an amazingly complex industry with lots of potential career paths, as Massey student Marc Blackburn will attest. Through his studies he is gaining invaluable insights for his role as logistics support manager at The Warehouse. #retailca#MasseyUni</p>
+                                                    <div id="gallery4"></div>
+                                                    <ul class="list-inline like_contribute">
+                                                        <li>
+                                                            <a href="javascript:void(0)"><span><i class="ion-thumbsup"></i></span>Encourage</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)"><span><i class="ion-briefcase"></i></span>Contribute</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="col-xs-12 col-condensed">
+                                                        <ul class="list-unstyled comment_section">
+                                                            <li>
+                                                                <div class="col-xs-12 col-condensed">
+                                                                    <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                        <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                                    </div>
+                                                                    <div class="col-xs-11 comment_area">
+                                                                        <div class="input-group">
+                                                                            <input class="form-control" placeholder="Write a comment" type="text">
+                                                                            <span class="input-group-addon">
+					                        <a href="javascript:void(0)"><i class="ion-android-done"></i></a>  
+					                    </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-condensed comment_list">
+                                            <div class="col-xs-1 col-condensed user_image">
+                                            </div>
+                                            <div class="col-xs-11   ">
+                                                <ul class="list-unstyled comment_section">
+                                                    <li>
+                                                        <div class="col-xs-12 ">
+                                                            <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                            </div>
+                                                            <div class="col-xs-11 comment_text">
+                                                                <div class="col-xs-12 col-condensed">
+                                                            	  <h5>Jamie Reyneke-Barnard</h5>
+                                                                <p>This is awesome. Want to try it.</p>
+                                                                <span>09 Oct 2016 09:06 PM</span>
+                                                            	</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                     <li>
+                                                        <div class="col-xs-12 ">
+                                                            <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                            </div>
+                                                            <div class="col-xs-11 comment_text">
+                                                            	<div class="col-xs-12 col-condensed">
+                                                            	  <h5>Jamie Reyneke-Barnard</h5>
+                                                                <p>This is awesome. Want to try it.</p>
+                                                                <span>09 Oct 2016 09:06 PM</span>
+                                                            	</div>
+                                                               
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                      <li>
+                                        <div class="col-xs-12 col-condensed post_content">
+                                            <div class="col-xs-12 col-condensed">
+                                                <div class="col-xs-1 col-condensed user_image">
+                                                    <img src="img/user_post_profile.png" class="img-responsive">
+                                                </div>
+                                                <div class="col-xs-11">
+                                                    <h4>Weltec</h4>
+                                                    <p class="date_time">09 Oct 2016 09:06 PM</p>
+                                                    <p>People often ask, 'Do you really need a degree to succeed in retail?' The truth is it's an amazingly complex industry with lots of potential career paths, as Massey student Marc Blackburn will attest. Through his studies he is gaining invaluable insights for his role as logistics support manager at The Warehouse. #retailca#MasseyUni</p>
+                                                    <div id="gallery5"></div>
+                                                    <ul class="list-inline like_contribute">
+                                                        <li>
+                                                            <a href="javascript:void(0)"><span><i class="ion-thumbsup"></i></span>Encourage</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)"><span><i class="ion-briefcase"></i></span>Contribute</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="col-xs-12 col-condensed">
+                                                        <ul class="list-unstyled comment_section">
+                                                            <li>
+                                                                <div class="col-xs-12 col-condensed">
+                                                                    <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                        <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                                    </div>
+                                                                    <div class="col-xs-11 comment_area">
+                                                                        <div class="input-group">
+                                                                            <input class="form-control" placeholder="Write a comment" type="text">
+                                                                            <span class="input-group-addon">
+					                        <a href="javascript:void(0)"><i class="ion-android-done"></i></a>  
+					                    </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-condensed comment_list">
+                                            <div class="col-xs-1 col-condensed user_image">
+                                            </div>
+                                            <div class="col-xs-11   ">
+                                                <ul class="list-unstyled comment_section">
+                                                    <li>
+                                                        <div class="col-xs-12 ">
+                                                            <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                            </div>
+                                                            <div class="col-xs-11 comment_text">
+                                                                <div class="col-xs-12 col-condensed">
+                                                            	  <h5>Jamie Reyneke-Barnard</h5>
+                                                                <p>This is awesome. Want to try it.</p>
+                                                                <span>09 Oct 2016 09:06 PM</span>
+                                                            	</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                     <li>
+                                                        <div class="col-xs-12 ">
+                                                            <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                            </div>
+                                                            <div class="col-xs-11 comment_text">
+                                                            	<div class="col-xs-12 col-condensed">
+                                                            	  <h5>Jamie Reyneke-Barnard</h5>
+                                                                <p>This is awesome. Want to try it.</p>
+                                                                <span>09 Oct 2016 09:06 PM</span>
+                                                            	</div>
+                                                               
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                      <li>
+                                        <div class="col-xs-12 col-condensed post_content">
+                                            <div class="col-xs-12 col-condensed">
+                                                <div class="col-xs-1 col-condensed user_image">
+                                                    <img src="img/user_post_profile.png" class="img-responsive">
+                                                </div>
+                                                <div class="col-xs-11">
+                                                    <h4>Weltec</h4>
+                                                    <p class="date_time">09 Oct 2016 09:06 PM</p>
+                                                    <p>People often ask, 'Do you really need a degree to succeed in retail?' The truth is it's an amazingly complex industry with lots of potential career paths, as Massey student Marc Blackburn will attest. Through his studies he is gaining invaluable insights for his role as logistics support manager at The Warehouse. #retailca#MasseyUni</p>
+                                                    <div id="gallery6"></div>
+                                                    <ul class="list-inline like_contribute">
+                                                        <li>
+                                                            <a href="javascript:void(0)"><span><i class="ion-thumbsup"></i></span>Encourage</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)"><span><i class="ion-briefcase"></i></span>Contribute</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="col-xs-12 col-condensed">
+                                                        <ul class="list-unstyled comment_section">
+                                                            <li>
+                                                                <div class="col-xs-12 col-condensed">
+                                                                    <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                        <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                                    </div>
+                                                                    <div class="col-xs-11 comment_area">
+                                                                        <div class="input-group">
+                                                                            <input class="form-control" placeholder="Write a comment" type="text">
+                                                                            <span class="input-group-addon">
+					                        <a href="javascript:void(0)"><i class="ion-android-done"></i></a>  
+					                    </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-condensed comment_list">
+                                            <div class="col-xs-1 col-condensed user_image">
+                                            </div>
+                                            <div class="col-xs-11   ">
+                                                <ul class="list-unstyled comment_section">
+                                                    <li>
+                                                        <div class="col-xs-12 ">
+                                                            <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                            </div>
+                                                            <div class="col-xs-11 comment_text">
+                                                                <div class="col-xs-12 col-condensed">
+                                                            	  <h5>Jamie Reyneke-Barnard</h5>
+                                                                <p>This is awesome. Want to try it.</p>
+                                                                <span>09 Oct 2016 09:06 PM</span>
+                                                            	</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                     <li>
+                                                        <div class="col-xs-12 ">
+                                                            <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                            </div>
+                                                            <div class="col-xs-11 comment_text">
+                                                            	<div class="col-xs-12 col-condensed">
+                                                            	  <h5>Jamie Reyneke-Barnard</h5>
+                                                                <p>This is awesome. Want to try it.</p>
+                                                                <span>09 Oct 2016 09:06 PM</span>
+                                                            	</div>
+                                                               
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                      <li>
+                                        <div class="col-xs-12 col-condensed post_content">
+                                            <div class="col-xs-12 col-condensed">
+                                                <div class="col-xs-1 col-condensed user_image">
+                                                    <img src="img/user_post_profile.png" class="img-responsive">
+                                                </div>
+                                                <div class="col-xs-11">
+                                                    <h4>Weltec</h4>
+                                                    <p class="date_time">09 Oct 2016 09:06 PM</p>
+                                                    <p>People often ask, 'Do you really need a degree to succeed in retail?' The truth is it's an amazingly complex industry with lots of potential career paths, as Massey student Marc Blackburn will attest. Through his studies he is gaining invaluable insights for his role as logistics support manager at The Warehouse. #retailca#MasseyUni</p>
+                                                    <div id="gallery7"></div>
+                                                    <ul class="list-inline like_contribute">
+                                                        <li>
+                                                            <a href="javascript:void(0)"><span><i class="ion-thumbsup"></i></span>Encourage</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)"><span><i class="ion-briefcase"></i></span>Contribute</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="col-xs-12 col-condensed">
+                                                        <ul class="list-unstyled comment_section">
+                                                            <li>
+                                                                <div class="col-xs-12 col-condensed">
+                                                                    <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                        <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                                    </div>
+                                                                    <div class="col-xs-11 comment_area">
+                                                                        <div class="input-group">
+                                                                            <input class="form-control" placeholder="Write a comment" type="text">
+                                                                            <span class="input-group-addon">
+					                        <a href="javascript:void(0)"><i class="ion-android-done"></i></a>  
+					                    </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-condensed comment_list">
+                                            <div class="col-xs-1 col-condensed user_image">
+                                            </div>
+                                            <div class="col-xs-11   ">
+                                                <ul class="list-unstyled comment_section">
+                                                    <li>
+                                                        <div class="col-xs-12 ">
+                                                            <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                            </div>
+                                                            <div class="col-xs-11 comment_text">
+                                                                <div class="col-xs-12 col-condensed">
+                                                            	  <h5>Jamie Reyneke-Barnard</h5>
+                                                                <p>This is awesome. Want to try it.</p>
+                                                                <span>09 Oct 2016 09:06 PM</span>
+                                                            	</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                     <li>
+                                                        <div class="col-xs-12 ">
+                                                            <div class="col-xs-2 col-condensed comment_usr_image">
+                                                                <img class="img-responsive" src="img/followers1.png" alt="comment_usr_image">
+                                                            </div>
+                                                            <div class="col-xs-11 comment_text">
+                                                            	<div class="col-xs-12 col-condensed">
+                                                            	  <h5>Jamie Reyneke-Barnard</h5>
+                                                                <p>This is awesome. Want to try it.</p>
+                                                                <span>09 Oct 2016 09:06 PM</span>
+                                                            	</div>
+                                                               
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    
+                                   
+                                   
+                                        
+                                   
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -195,9 +700,66 @@
     <script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/jquery.textarea_autosize.js"></script>
+    <script src="js/vendor/images-grid.js"></script>
     <script src="js/main.js"></script>
     <script>
     $('textarea.js-auto-size').textareaAutoSize();
+    </script>
+    <script>
+    var images = [
+        'img/post2.png',
+        'img/post3.png',
+        'img/post4.jpg',
+        'img/post5.jpg',
+        'img/post6.jpg',
+        'img/post7.jpg',
+        'img/post8.jpg',
+        'img/post9.jpg'
+    ];
+
+    $(function() {
+
+        $('#gallery1').imagesGrid({
+            align: true,
+            images: images
+        });
+        $('#gallery2').imagesGrid({
+            align: true,
+            images: images.slice(0, 5)
+        });
+        $('#gallery3').imagesGrid({
+            align: true,
+            images: images.slice(0, 4)
+        });
+        $('#gallery4').imagesGrid({
+            align: true,
+            images: images.slice(0, 3)
+        });
+        $('#gallery5').imagesGrid({
+            align: true,
+            images: images.slice(0, 2)
+        });
+        $('#gallery6').imagesGrid({
+            align: true,
+            images: images.slice(0, 1)
+
+        });
+        $('#gallery7').imagesGrid({
+            images: [
+                'img/post4.jpg',
+                'img/post5.jpg',
+                'img/post6.jpg',
+                'img/post7.jpg',
+                'img/post8.jpg',
+                'img/post9.jpg'
+            ],
+            align: true,
+            getViewAllText: function(imgsCount) {
+                return 'View all'
+            }
+        });
+
+    });
     </script>
 </body>
 
