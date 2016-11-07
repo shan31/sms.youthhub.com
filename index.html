@@ -19,6 +19,56 @@
     <link rel="stylesheet" type="text/css" href="css/images-grid.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    <style type="text/css">
+.chat-sidebar { display: none; width: 220px; position: fixed; z-index: 99999; background-color: #fff; height: 100%; right: 0px; top: 0px; padding-top: 10px; padding-bottom: 10px; border: 1px solid rgba(29, 49, 91, .3);    overflow: auto; }
+.chat-sidebar h1{
+        margin: 0px;
+    font-family: 'robotoregular';
+    font-size: 22px;
+    color: #4E4E4E;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+.sidebar-name { margin-bottom: 0px; font-size: 12px; }
+.sidebar-name span { padding-left: 5px; }
+.sidebar-name a { display: block; height: 100%; text-decoration: none; padding: 10px 10px; border-bottom: 1px solid #ddd; font-family: 'robotomedium'; position: relative; color: #4E4E4E; }
+.sidebar-name .online { width: 7px; height: 7px; border-radius: 50%; background-color: rgb(66, 183, 42); padding: 0px; position: absolute; right: 10px; top: 35%; }
+.sidebar-name:hover { background-color: #e1e2e5; }
+.sidebar-name img { width: 32px; height: 32px; vertical-align: middle; border-radius: 50%; }
+.popup-box { display: none; position: fixed; bottom: 0px; right: 220px; height: 285px; background-color: #fff; width: 250px; border: 1px solid rgba(29, 49, 91, .3); overflow: hidden; }
+.popup-box .popup-head { background-color: #f6f7f9; padding: 5px; color: #012550; font-weight: bold; font-size: 14px; clear: both; -webkit-box-shadow: 1px 1px 5px 2px rgba(204, 204, 204, 0.63); -moz-box-shadow: 1px 1px 5px 2px rgba(204, 204, 204, 0.63); box-shadow: 1px 1px 5px 2px rgba(204, 204, 204, 0.63); border-bottom: 1px solid #ddd; }
+.popup-box .popup-head .popup-head-left { float: left; font-family: 'robotoregular'; font-weight: 300; }
+.popup-box .popup-head .popup-head-right { float: right; opacity: 0.5; }
+.popup-box .popup-head .popup-head-right a { text-decoration: none; color: inherit; }
+.popup-box .popup-messages { height: 100%; overflow-y: auto; max-height: 200px; }
+.popup-box .popup-messages .message_text { position: absolute; bottom: 0px; padding: 5px 0px 5px; width: 100%; resize: none; height: 60px; border-top: 1px solid #ddd; background-color: #fff; }
+.popup-box .popup-messages .message_text textarea { width: 100%; resize: none; border: none; padding-left: 5px; }
+.popup-box .popup-messages .message_text textarea:focus { outline: none; }
+.popup-box .popup-messages .place_text { height: 100%; overflow-y: auto; }
+.popup-box .popup-messages .place_text .out_text { float: left; width: 100%; padding: 10px 5px; }
+.popup-box .popup-messages .place_text .out_text img { float: left; width: 30px; height: 30px; }
+.popup-box .popup-messages .place_text .out_text p { padding: 5px 10px; display: inline-block; width: auto; font-size: 12px; float: left; max-width: 180px; word-wrap: break-word; margin-left: 5px; border-radius: 20px; margin-bottom: 0px; background: #ddd; }
+.popup-box .popup-messages .place_text .in_text { float: right; width: 100%; padding: 10px; }
+.popup-box .popup-messages .place_text .in_text img { float: right; width: 30px; height: 30px; }
+.popup-box .popup-messages .place_text .in_text p { padding: 5px 10px; display: inline-block; width: auto; font-size: 12px; float: right; max-width: 180px; word-wrap: break-word; margin-right: 5px; border-radius: 20px; margin-bottom: 0px; background: #ddd; }
+.popup-box .popup-messages .message_text ul li { display: inline-block; }
+.popup-box .popup-messages .message_text ul li a { padding: 0px; padding-left: 10px; font-size: 16px; }
+#carbonads { max-width: 300px; background: #f8f8f8; }
+.carbon-text { display: block; width: 130px; }
+.carbon-poweredby { float: right; }
+.carbon-text { padding: 8px 0; }
+#carbonads { padding: 15px; border: 1px solid #ccc; }
+.carbon-text { font-size: 12px; color: #333333; text-decoration: none; }
+.carbon-poweredby { font-size: 75%; text-decoration: none; }
+#carbonads { position: fixed; top: 5px; left: 5px; }
+@media only screen and (max-width:540px) {
+    .chat-sidebar { display: none !important; }
+    .chat-popup { display: none !important; }
+}
+    </style>
+
+
 </head>
 
 <body>
@@ -36,12 +86,8 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#"><img src="img/header_logo2.png" alt="youthub_logo"></a>
-                <a class="quick-nav-trigger" href="javascript:void(0)"> <i class="ion-chatbubble"><sup>20</sup></i></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-            <div id="chatdiv" class="col-xs-4">
-            	
-            </div>
                 <form class="navbar-form header_menus_left" role="form">
                     <ul class="list-inline pull-left">
                         <li><a href="javascript:void(0)">Home </a></li>
@@ -57,7 +103,6 @@
                             <a href="javascript:void(0)">
                                 <span class="pull-right"><img class="img-responsive" src="http://placehold.it/50x50" alt="user_profile"></span>MICHEL </a>
                         </li>
-                      
                     </ul>
                 </form>
                 <form class="navbar-form" role="form">
@@ -355,7 +400,7 @@
                                                     <a href="javascript:void(0)"><span><img src="img/followers2.png" class="img-responsive"></span>Donna Martini</a>
                                                 </li>
                                             </ul>
-                                             <a class="btn btn-default follow_btn">View all</a>
+                                            <a class="btn btn-default follow_btn">View all</a>
                                         </div>
                                     </div>
                                 </li>
@@ -919,14 +964,128 @@
                 </div>
             </div>
         </div>
+        <a class="quick-nav-trigger" href="javascript:void(0)"> <i class="ion-chatbubble"><sup>20</sup></i></a>
+        <div class="chat-sidebar ">
+        <a  class="close_chat btn btn-link"><i class="ion-ios-arrow-thin-right"></i> </a>
+            <h1>Chat</h1>
+            <div class="sidebar-name">
+                <!-- Pass username and display name to register popup -->
+                <a href="javascript:register_popup('narayan-prusty', 'Narayan Prusty');">
+                    <img width="30" height="30" src="http://qnimate.com/wp-content/uploads/2014/12/Screen-Shot-2014-12-15-at-3.48.21-pm.png" />
+                    <span>Narayan Prusty</span>
+                    <span class="online"></span>
+                </a>
+            </div>
+            <div class="sidebar-name">
+                <a href="javascript:register_popup('qnimate', 'QNimate');">
+                    <img width="30" height="30" src="http://qnimate.com/wp-content/uploads/2014/12/Screen-Shot-2014-12-15-at-3.48.21-pm.png" />
+                    <span>QNimate</span>
+                    <span class="online"></span>
+                </a>
+            </div>
+            <div class="sidebar-name">
+                <a href="javascript:register_popup('qscutter', 'QScutter');">
+                    <img width="30" height="30" src="http://qnimate.com/wp-content/uploads/2014/12/Screen-Shot-2014-12-15-at-3.48.21-pm.png" />
+                    <span>QScutter</span>
+                    <span class="online"></span>
+                </a>
+            </div>
+            <div class="sidebar-name">
+                <a href="javascript:register_popup('qidea', 'QIdea');">
+                    <img width="30" height="30" src="http://qnimate.com/wp-content/uploads/2014/12/Screen-Shot-2014-12-15-at-3.48.21-pm.png" />
+                    <span>QIdea</span>
+                    <span class="online"></span>
+                </a>
+            </div>
+            <div class="sidebar-name">
+                <a href="javascript:register_popup('qazy', 'QAzy');">
+                    <img width="30" height="30" src="http://qnimate.com/wp-content/uploads/2014/12/Screen-Shot-2014-12-15-at-3.48.21-pm.png" />
+                    <span>QAzy</span>
+                    <span class="online"></span>
+                </a>
+            </div>
+            <div class="sidebar-name">
+                <a href="javascript:register_popup('qblock', 'QBlock');">
+                    <img width="30" height="30" src="http://qnimate.com/wp-content/uploads/2014/12/Screen-Shot-2014-12-15-at-3.48.21-pm.png" />
+                    <span>QBlock</span>
+                    <span class="online"></span>
+                </a>
+            </div>
+            <div class="sidebar-name">
+                <!-- Pass username and display name to register popup -->
+                <a href="javascript:register_popup('narayan-prusty', 'Narayan Prusty');">
+                    <img width="30" height="30" src="http://qnimate.com/wp-content/uploads/2014/12/Screen-Shot-2014-12-15-at-3.48.21-pm.png" />
+                    <span>Narayan Prusty</span>
+                    <span class="online"></span>
+                </a>
+            </div>
+            <div class="sidebar-name">
+                <a href="javascript:register_popup('qnimate', 'QNimate');">
+                    <img width="30" height="30" src="http://qnimate.com/wp-content/uploads/2014/12/Screen-Shot-2014-12-15-at-3.48.21-pm.png" />
+                    <span>QNimate</span>
+                    <span class="online"></span>
+                </a>
+            </div>
+            <div class="sidebar-name">
+                <a href="javascript:register_popup('qscutter', 'QScutter');">
+                    <img width="30" height="30" src="http://qnimate.com/wp-content/uploads/2014/12/Screen-Shot-2014-12-15-at-3.48.21-pm.png" />
+                    <span>QScutter</span>
+                    <span class="online"></span>
+                </a>
+            </div>
+            <div class="sidebar-name">
+                <a href="javascript:register_popup('qidea', 'QIdea');">
+                    <img width="30" height="30" src="http://qnimate.com/wp-content/uploads/2014/12/Screen-Shot-2014-12-15-at-3.48.21-pm.png" />
+                    <span>QIdea</span>
+                    <span class="online"></span>
+                </a>
+            </div>
+            <div class="sidebar-name">
+                <a href="javascript:register_popup('qazy', 'QAzy');">
+                    <img width="30" height="30" src="http://qnimate.com/wp-content/uploads/2014/12/Screen-Shot-2014-12-15-at-3.48.21-pm.png" />
+                    <span>QAzy</span>
+                    <span class="online"></span>
+                </a>
+            </div>
+            <div class="sidebar-name">
+                <a href="javascript:register_popup('qblock', 'QBlock');">
+                    <img width="30" height="30" src="http://qnimate.com/wp-content/uploads/2014/12/Screen-Shot-2014-12-15-at-3.48.21-pm.png" />
+                    <span>QBlock</span>
+                    <span class="online"></span>
+                </a>
+            </div>
+            <div class="sidebar-name">
+                <!-- Pass username and display name to register popup -->
+                <a href="javascript:register_popup('narayan-prusty', 'Narayan Prusty');">
+                    <img width="30" height="30" src="http://qnimate.com/wp-content/uploads/2014/12/Screen-Shot-2014-12-15-at-3.48.21-pm.png" />
+                    <span>Narayan Prusty</span>
+                    <span class="online"></span>
+                </a>
+            </div>
+            <div class="sidebar-name">
+                <a href="javascript:register_popup('qnimate', 'QNimate');">
+                    <img width="30" height="30" src="http://qnimate.com/wp-content/uploads/2014/12/Screen-Shot-2014-12-15-at-3.48.21-pm.png" />
+                    <span>QNimate</span>
+                    <span class="online"></span>
+                </a>
+            </div>
+            
+        </div>
     </section>
+<!--        <div id="chatdiv" class="col-xs-4">
+          <a href="javascript:void(0)" class="close_chat"><i class="ion-ios-arrow-thin-right"></i> </a>
+            	<div class="col-xs-12 col-condensed">
+            		
+            	</div>
+
+            </div> -->
     <!-- END DASHBOARD SECTION -->
     <script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/jquery.textarea_autosize.js"></script>
     <script src="js/vendor/images-grid.js"></script>
-     <script src="js/vendor/jquery.slimscroll.min.js"></script>
-     <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/vendor/jquery.slimscroll.min.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
     <script src="js/vendor/jquery.easing.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript">
@@ -941,13 +1100,118 @@
         size: '8px'
     });
 
-    $(".quick-nav-trigger").click(function () {
+    $(".quick-nav-trigger").click(function() {
 
-    $("#chatdiv").toggle("slide", {
-        direction: "right"
-    }, 500);
-});  
+        $(".chat-sidebar").toggle("slide", {
+            direction: "right"
+        }, 500);
+    });
 
+    $(".close_chat").click(function() {
+
+        $(".chat-sidebar").toggle("slide", {
+            direction: "right"
+        }, 500);
+    });
+    </script>
+    <script type="text/javascript">
+    $('textarea.js-auto-size').textareaAutoSize();
+    Array.remove = function(array, from, to) {
+        var rest = array.slice((to || from) + 1 || array.length);
+        array.length = from < 0 ? array.length + from : from;
+        return array.push.apply(array, rest);
+    };
+
+    //this variable represents the total number of popups can be displayed according to the viewport width
+    var total_popups = 0;
+
+    //arrays of popups ids
+    var popups = [];
+
+    //this is used to close a popup
+    function close_popup(id) {
+        for (var iii = 0; iii < popups.length; iii++) {
+            if (id == popups[iii]) {
+                Array.remove(popups, iii);
+
+                document.getElementById(id).style.display = "none";
+
+                calculate_popups();
+
+                return;
+            }
+        }
+    }
+
+    //displays the popups. Displays based on the maximum number of popups that can be displayed on the current viewport width
+    function display_popups() {
+        var right = 260;
+
+        var iii = 0;
+        for (iii; iii < total_popups; iii++) {
+            if (popups[iii] != undefined) {
+                var element = document.getElementById(popups[iii]);
+                element.style.right = right + "px";
+                right = right + 275;
+                element.style.display = "block";
+            }
+        }
+
+        for (var jjj = iii; jjj < popups.length; jjj++) {
+            var element = document.getElementById(popups[jjj]);
+            element.style.display = "none";
+        }
+    }
+
+    //creates markup for a new popup. Adds the id to popups array.
+    function register_popup(id, name) {
+
+        for (var iii = 0; iii < popups.length; iii++) {
+            //already registered. Bring it to front.
+            if (id == popups[iii]) {
+                Array.remove(popups, iii);
+
+                popups.unshift(id);
+
+                calculate_popups();
+
+
+                return;
+            }
+        }
+
+        var element = '<div class="popup-box chat-popup" id="' + id + '">';
+        element = element + '<div class="popup-head">';
+        element = element + '<div class="popup-head-left">' + name + ' </div>';
+        element = element + '<div class="popup-head-right"><a href="javascript:close_popup(\'' + id + '\');">&#10005;</a></div>';
+        element = element + '<div style="clear: both"></div></div><div class="popup-messages"><div class="place_text"><span class="out_text"><img src="img/followers1.png" alt="lol"> <p>Through his studies he is gaining invaluable insights for his role as logistics support manager at The Warehouse Through his studies he is gaining invaluable insights for his role as logistics support manager at The Warehouse</p></span><span class="in_text"><img src="img/followers1.png" alt="lol"> <p>Hai</p></span> </div> <div class="message_text"><textarea class="js-auto-size" rows="1" placeholder=" Type your text"></textarea><ul class"list-inline"><li><a class="btn btn-link"><i class="ion-images"></i></a></li><li><a class="btn btn-link"><i class="ion-android-attach"></i></a></li><li><a class="btn btn-link"><i class="ion-happy-outline"></i></a></li><li><a class="btn btn-link"></a></li></ul></div> </div> </div></div>';
+
+        document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagName("body")[0].innerHTML + element;
+
+        popups.unshift(id);
+
+        calculate_popups();
+
+    }
+
+    //calculate the total number of popups suitable and then populate the toatal_popups variable.
+    function calculate_popups() {
+        var width = window.innerWidth;
+        if (width < 540) {
+            total_popups = 0;
+        } else {
+            width = width - 200;
+            //320 is width of a single popup box
+            total_popups = parseInt(width / 320);
+        }
+
+        display_popups();
+
+    }
+
+    //recalculate when window is loaded and also when window is resized.
+    window.addEventListener("resize", calculate_popups);
+    window.addEventListener("load", calculate_popups);
     </script>
 </body>
 
