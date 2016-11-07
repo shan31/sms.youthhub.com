@@ -36,8 +36,12 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#"><img src="img/header_logo2.png" alt="youthub_logo"></a>
+                <a class="quick-nav-trigger" href="javascript:void(0)"> <i class="ion-chatbubble"><sup>20</sup></i></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
+            <div id="chatdiv" class="col-xs-4">
+            	
+            </div>
                 <form class="navbar-form header_menus_left" role="form">
                     <ul class="list-inline pull-left">
                         <li><a href="javascript:void(0)">Home </a></li>
@@ -53,10 +57,7 @@
                             <a href="javascript:void(0)">
                                 <span class="pull-right"><img class="img-responsive" src="http://placehold.it/50x50" alt="user_profile"></span>MICHEL </a>
                         </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <i class="ion-android-menu"></i></a>
-                        </li>
+                      
                     </ul>
                 </form>
                 <form class="navbar-form" role="form">
@@ -924,7 +925,9 @@
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/jquery.textarea_autosize.js"></script>
     <script src="js/vendor/images-grid.js"></script>
-    <script src="js/vendor/jquery.slimscroll.min.js"></script>
+     <script src="js/vendor/jquery.slimscroll.min.js"></script>
+     <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/vendor/jquery.easing.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript">
     var scroll = $('.scroller');
@@ -937,6 +940,14 @@
         distance: '-1px',
         size: '8px'
     });
+
+    $(".quick-nav-trigger").click(function () {
+
+    $("#chatdiv").toggle("slide", {
+        direction: "right"
+    }, 500);
+});  
+
     </script>
 </body>
 
